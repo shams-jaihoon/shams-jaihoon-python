@@ -42,16 +42,16 @@ maxOfTwo(32 , 78)
 
 # Excersize 6
 def is_vowel(character):
-    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     if character in vowels:
-        return true
+      return True
     else:
-        return false
-    characters = ["a" "b", "E", "Z"]
-    for char in characters:
-        result = is_vowel(char)
-        print(f"{char} is a vaowel: {result}")
-        
+      return False
+    
+print(is_vowel('a'))  
+print(is_vowel('b')) 
+print(is_vowel('E'))
+print(is_vowel('Z'))    
 
 
 # Excersize 7
@@ -66,6 +66,18 @@ print(factorial(5))
 # 5 * 4 * 3 * 2 * 1 = 120
 
 
+# excersize 8
+def is_palindrome(x):
+  if x == x[::-1]:
+    return True
+  else:
+    return False
+  
+print(is_palindrome("radar")) 
+print(is_palindrome("Python"))  
+
+
+
 #  Excersuze 9
 def sum_multiple(n, f):
     num1 = range(n,100,n)
@@ -74,7 +86,7 @@ def sum_multiple(n, f):
     nu2 = list(num2)
     print(sum(nu1))
     print(sum(nu2))
-    print(sum(nu1+nu2))
+    print(sum(nu1)+sum(nu2))
 
 sum_multiple(3,5)
 
